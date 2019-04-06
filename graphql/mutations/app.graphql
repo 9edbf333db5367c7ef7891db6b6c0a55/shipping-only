@@ -1,0 +1,42 @@
+mutation createNewUser($user:  UserInput!) {
+    createNewUser(user: $user) {
+        success
+        error { code name }
+        user { id }
+    }
+}
+
+# Query Variable
+# {
+#   "user": {
+#     "displayName": "Eugene Famuel",
+#     "email": "eugeneFamue@gmail.com",
+#     "photoURL": "https://lh5.googleusercontent.com/-m6eaQ3aQ2Xw/AAAAAAAAAAI/AAAAAAAABYg/xnR0yfjdbic/photo.jpg",
+#     "providerId": "google.com",
+#     "uid": "1029510766036671545550",
+#     "role": 1,
+#     "phoneNumber": null
+#   }
+# }
+
+# POST body example
+# {
+#     "query": "mutation createNewUser($user:  UserInput!) {\n
+#         createNewUser(user: $user) {\n
+#             success\n
+#             error { code name }\n
+#             user { id }\n
+#         }\n
+#     }",
+#     "variables": {
+#         "user": {
+#             "displayName": "Eugene Xaise",
+#             "email": "eugenexaise@gmail.com",
+#             "photoURL": "https://lh5.googleusercontent.com/-m6eaQ3aQ2Xw/AAAAAAAAAAI/AAAAAAAABYg/xnR0yfjdbic/photo.jpg",
+#             "providerId": "google.com",
+#             "uid": "102951076603667150578",
+#             "role": 1,
+#             "phoneNumber": null
+#         }
+#     }
+# }

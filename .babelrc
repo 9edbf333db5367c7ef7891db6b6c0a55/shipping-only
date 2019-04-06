@@ -1,0 +1,19 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "browsers": "last 2 years, last 10 versions, > 5%"
+                },
+                "modules": false
+            }
+        ]
+    ],
+
+    "env": {
+        "test": {
+            "plugins": []
+        }
+    }
+}
